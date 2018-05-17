@@ -3,18 +3,24 @@
 	<head>
 		<meta charset = "utf-8">
 		<title>Inscription</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min">
 	</head>
 	<body>
 		<h1>Inscirption</hi>
-		<form method = "post" action = "inscrire.php" >
-			<p>Nom : <input type = "text" name = "nom" id = "nom"></p>
-			<p>Prenom : <input type = "text" name = "prenom" id = "prenom"></p>
-			<p>Email : <input type = "email" name = "email" id = "email"></p>
-			<p>Mot de passe  : <input type = "password" name = "mot de passe" id = "password"></p>
-			<p>Age : <input type = "date" name = "age" id ="age"></p>
-			<p>Pseudo : <input type = "text" name = "pseudo" id ="pseudo"></p>
-
-
+		<div class = "container">
+			<form method = "post" action = "inscrire.php" class = "row">
+				<div class = "col-md-6">
+					<p>Nom : <input type = "text" name = "nom" id = "nom"></p>
+					<p>Prenom : <input type = "text" name = "prenom" id = "prenom"></p>
+					<p>Email : <input type = "email" name = "email" id = "email"></p>
+				</div>
+				<div class = "col-md-6">
+					<p>Mot de passe  : <input type = "password" name = "mot de passe" id = "password"></p>
+					<p>Pseudo : <input type = "text" name = "pseudo" id ="pseudo"></p>
+					<p>Age : <input type = "date" name = "age" id ="age"></p>
+					<input type="submit" value="Envoyer le formulaire d'inscription">
+				</div>
+		</div>
 		</form>
 	</body>
 </html>
