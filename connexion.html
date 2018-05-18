@@ -7,15 +7,17 @@
 	</head>
 	<body>
 		<div class = "container">
-			<form method = "post" action = "inscrire.php" class = "row">
-				<div class = "col-md-12">
-					<h1>CONNEXION</hi>
-					<p>Email : <input type = "email" name = "email" id = "email" placeholder="exemple@hotmail.fr"></p>
-					<p>Mot de passe  : <input type = "password" name = "mot de passe" id = "password" placeholder="Mot de passe"></p>
-					<input type="submit" value="Connexion" class="btn btn-success">
-					<p><a href = "inscription.html">Toujours pas inscrit? Cliquez ici pour vous inscrire!<a></p>
-				</div>
-			</from>
+			<div class = "col-md-12">
+				<h1>CONNEXION</hi>
+				<form method = "post" action = "connecter.php" class = "row">
+					<div>
+						<p>Email : <input type = "email" name = "email" id = "email" placeholder="exemple@hotmail.fr"></p>
+						<p>Mot de passe  : <input type = "password" name = "mot de passe" id = "password" placeholder="Mot de passe"></p>
+						<input type="submit" value="Connexion" class="btn btn-success">
+					</div>
+				</from>
+				<p><a href = "inscription.html">Toujours pas inscrit? Cliquez ici pour vous inscrire!<a></p>
+			</div>
 		</div>
 	</body>
 </html>
